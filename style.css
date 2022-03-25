@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(74, 212, 247);
+    font-family: gadugi;
+    font-weight: 100;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    font-weight: 100;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+#seconds, #milliseconds, #minutes {
+    font-size: 2em;
+}
+
+.main-b {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 40px 20px;
+    border: 2.3px solid white;
+    border-radius: 6px;
+    padding: 14px 70px 14px 70px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: white;
+    color: rgb(74, 212, 247);
+    transition: all 0.45s ease-out;
+}
