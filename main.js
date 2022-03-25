@@ -1,26 +1,28 @@
 window.onload = function () {
-    let sec = 00;
-    let milli = 00;
-    let min = 00;
+    let sec = 0;
+    let milli = 0;
+    let min = 0;
+    
     const seconds = document.getElementById('seconds');
     const milliseconds = document.getElementById('milliseconds');
     const buttonStart = document.getElementById('button-start');
     const buttonStop = document.getElementById('button-stop');
     const buttonReset = document.getElementById('button-reset');
-    let Interval;
+    
+    let interval;
     const minutes = document.getElementById('minutes');
 
     buttonStart.onclick = function() {
-        clearInterval(Interval);
-        Interval = setInterval(startTime, 10);
+        clearInterval(interval);
+        interval = setInterval(startTime, 10);
     }
 
     buttonStop.onclick = function() {
-        clearInterval(Interval);
+        clearInterval(interval);
     }
 
     buttonReset.onclick = function() {
-        clearInterval(Interval);
+        clearInterval(interval);
         milli = '00';
         sec = '00:';
         milliseconds.innerHTML = milli;
