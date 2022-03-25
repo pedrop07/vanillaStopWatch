@@ -30,31 +30,23 @@ window.onload = function () {
 
     function startTime() {
         milli++;
-
+        
         if (milli <= 9){
             milliseconds.innerHTML = '0' + milli;
-        }
-
-        if (milli > 9){
+        } else if (milli > 9) {
             milliseconds.innerHTML = milli;
-        }
-
-        if (milli > 99){
+        } else if (milli > 99) {
             sec++;
             seconds.innerHTML = '0' + sec + ':';
             milli = 0;
             milliseconds.innerHTML = '0' + milli;
-        }
-
-        if (sec === 0){
+        } 
+        
+        if (sec === 0) {
             seconds.innerHTML = sec + '0:';
-        }
-
-        if (sec > 9){
+        } else if (sec > 9) {
             seconds.innerHTML = sec + ':';
-        }
-
-        if (sec > 60){
+        } else if (sec > 60) {
             min++;
             minutes.innerHTML = '0' + min + ':';
             sec = 0;
