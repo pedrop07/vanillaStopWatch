@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(74, 212, 247);
+    background-color: #584848;
     font-family: gadugi;
     font-weight: 100;
 }
@@ -40,6 +40,6 @@
 
 .buttons:hover {
     background-color: white;
-    color: rgb(74, 212, 247);
+    color: #584848;
     transition: all 0.45s ease-out;
 }
