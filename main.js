@@ -21,10 +21,10 @@ window.onload = function () {
 
     buttonReset.onclick = function() {
         clearInterval(Interval);
-        milli = '00';
-        sec = '00:';
-        milliseconds.innerHTML = milli;
-        seconds.innerHTML = sec;
+        milli = 00;
+        sec = 00;
+        milliseconds.innerHTML = '00';
+        seconds.innerHTML = `00:`;
         minutes.remove();
     }
 
